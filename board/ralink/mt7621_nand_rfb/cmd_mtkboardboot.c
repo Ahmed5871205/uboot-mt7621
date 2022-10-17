@@ -43,6 +43,12 @@ static int do_mtkboardboot(cmd_tbl_t *cmdtp, int flag, int argc,
 		CONFIG_SYS_SDRAM_BASE + SZ_32M,
 		CONFIG_DEFAULT_NAND_KERNEL_OFFSET);
 	run_command(cmd, 0);
+
+#ifdef CONFIG_BOARD_H3C_TX180X	// boot stock firmware and OpenWrt 
+	run_command("nmbm nmbm0 read 0x88000000 0x200000 0x800000", 0);
+	run_command("bootm 0x880000a0", 0);
+#endif
+
 #endif
 
 	if (ep) {
