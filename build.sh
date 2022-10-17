@@ -13,6 +13,7 @@ Boards=( \
 	asus_rt-ac1200gu \
 	h3c_tx180x \
 	mercury_mac2600r \
+	raisecom_msg1500x \
 	)
 
 if [ ! -d "./bin" ]; then
