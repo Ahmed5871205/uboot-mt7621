@@ -10,6 +10,7 @@ cd $(dirname "$0")
 
 # add board name here
 Boards=( \
+	asus_rt-ac1200gu \
 	)
 
 if [ ! -d "./bin" ]; then
