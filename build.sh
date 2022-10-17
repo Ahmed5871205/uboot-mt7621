@@ -12,6 +12,7 @@ cd $(dirname "$0")
 Boards=( \
 	asus_rt-ac1200gu \
 	h3c_tx180x \
+	mercury_mac2600r \
 	)
 
 if [ ! -d "./bin" ]; then
