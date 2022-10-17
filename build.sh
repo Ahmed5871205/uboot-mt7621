@@ -17,6 +17,7 @@ Boards=( \
 	sim_ax18t \
 	skspruce_wia3300-10 \
 	xiaomi_cr660x \
+	zte_e8820-v2 \
 	)
 
 if [ ! -d "./bin" ]; then

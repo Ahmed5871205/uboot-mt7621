@@ -25,6 +25,7 @@ dtb-$(CONFIG_BOARD_RAISECOM_MSG1500X) += raisecom_msg1500x.dtb
 dtb-$(CONFIG_BOARD_SIM_AX18T) += sim_ax18t.dtb
 dtb-$(CONFIG_BOARD_SKSpruce_WIA3300) += skspruce_wia3300-10.dtb
 dtb-$(CONFIG_BOARD_XIAOMI_CR660X) += xiaomi_cr660x.dtb
+dtb-$(CONFIG_BOARD_ZTE_E8820V2) += zte_e8820-v2.dtb
 
 targets += $(dtb-y)
 
