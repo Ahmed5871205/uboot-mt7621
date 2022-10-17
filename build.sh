@@ -15,6 +15,7 @@ Boards=( \
 	mercury_mac2600r \
 	raisecom_msg1500x \
 	sim_ax18t \
+	skspruce_wia3300-10 \
 	)
 
 if [ ! -d "./bin" ]; then
