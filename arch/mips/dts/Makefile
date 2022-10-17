@@ -22,6 +22,7 @@ dtb-$(CONFIG_BOARD_ASUS_RTAC1200GU) += asus_rt-ac1200gu.dtb
 dtb-$(CONFIG_BOARD_H3C_TX180X) += h3c_tx180x.dtb
 dtb-$(CONFIG_BOARD_MERCURY_MAC2600R) += mercury_mac2600r.dtb
 dtb-$(CONFIG_BOARD_RAISECOM_MSG1500X) += raisecom_msg1500x.dtb
+dtb-$(CONFIG_BOARD_SIM_AX18T) += sim_ax18t.dtb
 
 targets += $(dtb-y)
 
