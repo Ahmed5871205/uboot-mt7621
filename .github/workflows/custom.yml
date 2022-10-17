@@ -1,0 +1,41 @@
+name: Build customized u-boot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build MT7621 u-boot
+    runs-on: ubuntu-latest
+    strategy:
+       fail-fast: False
+
+    steps:
+      - name: Checkout master directory
+        uses: actions/checkout@v3
+        with:
+          path: uboot-mt7621
+          ref: new_devices
+
+      - name: Install essential packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install swig python2-dev
+          echo 'switch to python2 as default'
+          sudo rm /usr/bin/python
+          sudo ln -s /usr/bin/python2 /usr/bin/python
+
+      - name: Download OpenWrt toolchain
+        run: |
+          wget -O - https://downloads.cdn.openwrt.org/releases/19.07.10/targets/ramips/mt7621/openwrt-sdk-19.07.10-ramips-mt7621_gcc-7.5.0_musl.Linux-x86_64.tar.xz \
+            | tar --xz -xf -
+
+      - name: Compile
+        working-directory: uboot-mt7621
+        run: ./build.sh
+
+      - name: Upload binaries
+        uses: actions/upload-artifact@v3
+        with:
+          name: u-boot-mt7621
+          path: "uboot-mt7621/bin/"
