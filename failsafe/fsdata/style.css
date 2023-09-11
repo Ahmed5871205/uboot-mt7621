@@ -1,26 +1,124 @@
+h1,
+p,
+form,
+ul {
+	margin: 0;
+	padding: 0;
+}
 
+html,
 body {
-	padding: 1em;
+	font: 13px/20px Arial, sans-serif;
+	background: #EDEDED;
 }
 
-#banner {
-	width: 100%;
-	height: 40px;
-	font-size: 2em;
+#m {
+	max-width: 750px;
+	margin: 30px auto 10px;
+	border: solid 1px #BABABA;
+	background: #FFF;
+	border-radius: 7px;
+	box-shadow: 0 0 10px #D2D1D1;
+}
+
+#m > * {
+	padding: 20px;
+}
+.update_btn {
+	
+appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+	width : 150px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.choose_btn {
+	margin-right :5px;
+	margin-top: 16px;
+	width : 250px;
+
+}
+.secondH {
+	
+	font-size : 20px;
+}
+
+h1 {
+	padding-top: 42px;
+    padding-bottom: 1px;
+	font: bold 30px/30px Tahoma;
+}
+
+
+a,
+h1 {
+	color: #2450AD;
+	text-decoration: none;
+}
+
+.i {
+	margin: 20px;
+	border-radius: 7px;
+	text-align: justify;
+}
+
+.w {
+	background: #FEFDCE;
+	border: solid 1px #FFC643;
+}
+
+.e {
+	background: #FFE7E7;
+	border:solid 1px #FE7171;
+}
+
+
+
+#f {
 	text-align: center;
-	margin-bottom: 30px;
+	color: #969393;
 }
 
-#main {
-	width: 500px;
-	margin: auto;
+form,
+p,
+h1 {
+	text-align: center;
 }
 
-#submit {
+ul {
+	list-style: square;
+	margin: 0 0 0 20px;
+}
+
+.red {
+	color: #E41616;
+}
+
+.i strong {
+	margin: 0 0 5px;
 	display: block;
-	margin: auto;
-}
-
-#fileinfo {
-	padding-left: 20px;
 }
