@@ -10,7 +10,10 @@
 			<h1>MERCURY KM06-704H </h1>
 			<h1 id="secondH" class="secondH">System Recovery Mode</h1>
 			<p>You are going to update <strong>firmware</strong> on the device.<br>Please, choose file from your local hard drive and click <strong>Update firmware</strong> button.</p>
-			<form method="post" enctype="multipart/form-data"><input type="file" class ="choose_btn" name="firmware"><input class="update_btn"type="submit" value="Update firmware"></form>
+			<form action="/upload" method="post" enctype="multipart/form-data">
+			<p><input type="file" name="firmware" /></p>
+			<p><input type="submit" id="submit" value="Upload" /></p>
+		    </form>
 			<div class="i w">
 				<strong>WARNINGS</strong>
 				<ul>
