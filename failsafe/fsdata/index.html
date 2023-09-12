@@ -1,19 +1,28 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>MediaTek System Recovery Mode</title>
-	<link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-<body>
-	<div id="banner">
-		MediaTek U-Boot System Recovery Mode
-	</div>
-	<div id="main">
-		<p>Upload new firmware:</p>
-		<form action="/upload" method="post" enctype="multipart/form-data">
+	<head>
+		<meta charset="utf-8">
+		<title>MERCURY KM06-704H System Recovery Mode</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="m">
+			<h1>MERCURY KM06-704H </h1>
+			<h1 id="secondH" class="secondH">System Recovery Mode</h1>
+			<p>You are going to update <strong>firmware</strong> on the device.<br>Please, choose file from your local hard drive and click <strong>Update firmware</strong> button.</p>
+			<form action="/upload" method="post" enctype="multipart/form-data">
 			<p><input type="file" name="firmware" /></p>
 			<p><input type="submit" id="submit" value="Upload" /></p>
-		</form>
-	</div>
-</body>
+		    </form>
+			<div class="i w">
+				<strong>WARNINGS</strong>
+				<ul>
+					<li>do not power off the device during update</li>
+					<li>if everything goes well, the device will restart</li>
+					<li>you can upload whatever you want, so be sure that you choose proper firmware image for your device</li>
+				</ul>
+			</div>
+		</div>
+		<div id="f">Copyright (C) 2023 MediaTek Inc. All Rights Reserved by<a href="https://www.facebook.com/gasem.rd" target="_blank"> abojaser</a></div>
+	</body>
 </html>
