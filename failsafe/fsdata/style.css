@@ -12,6 +12,22 @@ body {
 	background: #EDEDED;
 }
 
+.upload_page{
+
+	background-color : #fff;
+	padding : 10px;
+	max-width: 750px;
+	height : 65%;
+	margin : auto;
+	font-size : 15px;
+	line-height : 3em;
+	margin-top : 3%;
+	border: solid 1px #BABABA;
+	box-shadow: 0 0 10px #D2D1D1;
+	border-radius: 7px;
+	height : 30
+}
+
 #m {
 	max-width: 750px;
 	margin: 30px auto 10px;
@@ -24,6 +40,36 @@ body {
 #m > * {
 	padding: 20px;
 }
+.success{
+	background-color : #fff;
+	padding : 10px;
+	max-width: 750px;
+	margin : auto;
+	font-size : 15px;
+	line-height : 3em;
+	margin-top : 4%;
+	border: solid 1px #BABABA;
+	box-shadow: 0 0 10px #D2D1D1;
+	border-radius: 7px;
+	
+}
+.upgrade{
+	
+	font-size : 20px;
+	line-height : 3em;
+}
+.rebooting{
+	
+	font-size : 20px;
+}
+.proceed_btn{
+	
+	padding : 5px;
+	width : 20%;
+	cursor : pointer;
+	margin-bottom : 3%;
+}
+
 .update_btn {
 	
 appearance: none;
@@ -100,7 +146,7 @@ h1 {
 
 #f {
 	text-align: center;
-	color: #969393;
+	margin-top : 2%;
 }
 
 form,
